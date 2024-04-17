@@ -1,0 +1,7 @@
+<ul>
+    @for (item of productos; track $index) {
+
+        <li (click)="enviarPadre(item)">{{item}}</li>
+
+    }
+</ul>

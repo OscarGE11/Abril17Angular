@@ -1,0 +1,11 @@
+<h1>Lista de productos</h1>
+<ul>
+    @for (item of productosMostrados; track $index) {
+
+        <li>{{item}}</li>
+
+    }
+</ul>
+
+<h2>Productos</h2>
+<app-lista-productos-hijo (llamadaPadre)="recibirDato($event)"></app-lista-productos-hijo>
